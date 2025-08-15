@@ -57,6 +57,30 @@ function bestTeam(player1, player2) {
 
 
 
+function isSame(arr1, arr2) {
+  // You have to write your code here
+  // valdation: arr1,arr2 must array otherswise Invalid 
+  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+    return "Invalid";
+  }
+  // check: length are must be same  
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  // conditiaon 
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false; //not same index return false
+    }
+
+  }
+  return true; // all item and length same return true
+
+}
+
+
+
+
 
 
 
